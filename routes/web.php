@@ -14,7 +14,7 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('welcome'); 
 });
 //Rotas para registo no banco de dados e particularmente na tabela produtos!
 Route::get('/produtos/novo', 'ProdutoController@create');
