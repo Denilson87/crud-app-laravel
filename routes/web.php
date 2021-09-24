@@ -20,5 +20,4 @@ Route::get('/', function () {
 Route::get('/produtos/novo', 'ProdutoController@create');
 Route::post('/produtos/novo', 'ProdutoController@store')->name('registar_produto');
 //Rotas para visualiar um dados identidicado pelo id, vindo da base de dados e postando os mesmo no formulio
-
 Route::get('/produtos/ver/{id}', 'ProdutoController@show'); 
