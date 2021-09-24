@@ -16,7 +16,7 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome'); 
 });
-//Rotas para registo no banco de dados e particularmente na tabela produtos!
+//Rotas para registo no banco de dados e  particularmente na tabela produtos!
 Route::get('/produtos/novo', 'ProdutoController@create');
 Route::post('/produtos/novo', 'ProdutoController@store')->name('registar_produto');
 //Rotas para visualiar um dados identidicado pelo id, vindo da base de dados e postando os mesmo no formulio
